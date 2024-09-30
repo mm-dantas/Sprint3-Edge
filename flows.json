@@ -1,0 +1,109 @@
+[
+    {
+        "id": "ea6c44cca3942865",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c1f0267273579002",
+        "type": "mqtt in",
+        "z": "ea6c44cca3942865",
+        "name": "",
+        "topic": "fiap/iot/velocidade",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6ad26790bc5bac10",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "b70354809b177804"
+            ]
+        ]
+    },
+    {
+        "id": "b70354809b177804",
+        "type": "ui_gauge",
+        "z": "ea6c44cca3942865",
+        "name": "",
+        "group": "b326e98d043e4d58",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "velocimetro",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 590,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6ad26790bc5bac10",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b326e98d043e4d58",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "4524dfd5ede1289f",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4524dfd5ede1289f",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
