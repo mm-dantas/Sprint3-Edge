@@ -63,6 +63,10 @@ A arquitetura da solução envolve três principais componentes:
 
 O código desenvolvido para o projeto está localizado no seguinte repositório: https://github.com/mm-dantas/Sprint3-Edge
 
+## Vídeo Apresentando o Projeto
+
+link: https://youtu.be/8N3ZSq7nYpU?si=VLfuqSCVypU45CU6
+
 
 
 ## Membros do Grupo
