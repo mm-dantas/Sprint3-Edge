@@ -39,6 +39,7 @@ A arquitetura da solução envolve três principais componentes:
 1. **Configuração do ESP32**:
    - Certifique-se de que o ESP32 esteja conectado à rede Wi-Fi e que o código fonte esteja carregado no dispositivo.
    - O código fonte deve ser modificado para incluir as credenciais de Wi-Fi e as configurações do broker MQTT, (no código do projeto foi utilizado "Wokwi-GUEST" que é uma rede Wi-Fi virtual que é disponibilizada pela plataforma de simulação Wokwi).
+   - Não esqueça de colocar no Hivmq o `Host: broker.hivemq.com` e o Topic Subscription: `fiap/iot/velocidade`
 
 2. **Configuração do Node-RED**:
    - Instale e inicie o Node-RED.
